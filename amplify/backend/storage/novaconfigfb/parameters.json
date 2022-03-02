@@ -1,0 +1,5 @@
+{
+    "tableName": "roles",
+    "partitionKeyName": "role",
+    "partitionKeyType": "S"
+}

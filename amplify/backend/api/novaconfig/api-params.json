@@ -1,0 +1,60 @@
+{
+    "paths": [
+        {
+            "name": "/roles",
+            "lambdaFunction": "novaconfigrolesfn",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/integrations",
+            "lambdaFunction": "novaintegrations",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "novaconfig",
+    "apiName": "novaconfig",
+    "functionArns": [
+        {
+            "lambdaFunction": "novaconfigrolesfn"
+        },
+        {
+            "lambdaFunction": "novaintegrations"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-nova-dev-165417-authRole",
+        "unAuthRoleName": "amplify-nova-dev-165417-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "novaconfigrolesfn",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "novaintegrations",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "770a8906"
+}

@@ -1,0 +1,5 @@
+{
+    "tableName": "novaIntegrationDb",
+    "partitionKeyName": "integration",
+    "partitionKeyType": "S"
+}

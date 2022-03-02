@@ -1,0 +1,28 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-nova-dev-165417-authRole",
+            "UnauthRoleArn": "arn:aws:iam::423918353162:role/amplify-nova-dev-165417-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::423918353162:role/amplify-nova-dev-165417-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-nova-dev-165417-deployment",
+            "UnauthRoleName": "amplify-nova-dev-165417-unauthRole",
+            "StackName": "amplify-nova-dev-165417",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:423918353162:stack/amplify-nova-dev-165417/a6e43ea0-0d46-11eb-9b3a-06c012599cae",
+            "AmplifyAppId": "d35fppggm08qxm"
+        },
+        "categories": {
+            "auth": {
+                "nova20666cc2": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"1342693019426956\",\"client_secret\":\"7200f0362710ed440686cfe838192221\"},{\"ProviderName\":\"Google\",\"client_id\":\"568668465839-6dhp2p7q0g8r90act2f3u997v8me253q.apps.googleusercontent.com\",\"client_secret\":\"3VEgotW1D2l340GhHA3dw5NA\"}]"
+                }
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d35fppggm08qxm",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}
